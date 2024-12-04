@@ -1,5 +1,6 @@
 {
   "name": "hogwarts-theater",
+  "homepage": "https://gieres-ewing.github.io/cheers-level-2/",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

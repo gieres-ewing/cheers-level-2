@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href /cheers-level-2/ && gh-pages -d dist/cheers-level-2"
   },
   "private": true,
   "dependencies": {

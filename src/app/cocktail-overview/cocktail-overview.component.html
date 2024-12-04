@@ -1,0 +1,48 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<button
+  img
+  (click)="goToBrowser()">
+  <i class="fa fa-home"></i> Back
+</button>
+
+<div
+  class="overview"
+  *ngLet="cocktail$ | async as cocktail">
+  <img
+    src="{{ cocktail?.imageUrl }}"
+    alt="Cocktail Image" />
+
+  <div class="container">
+    <header class="title">
+      <h1>{{ cocktail?.name }}</h1>
+      <span
+        class="icon-star"
+        [class.active]="isFavorite()"
+        id="star-{cocktail?.id}"
+        (click)="toggleFavorite(cocktail?.id)"></span>
+    </header>
+
+    <div class="characteristics">
+      <h3>Type:</h3>
+      <p
+        [class.alcoholic]="cocktail?.isAlcoholic"
+        class="chip-is-alcoholic">
+        {{ cocktail?.isAlcoholic ? 'Alcoholic' : 'Non alcoholic' }}
+      </p>
+
+      <h3>Ingredients:</h3>
+      <div>
+        <div *ngFor="let ingredient of cocktail?.ingredients">
+          <li>
+            {{ ingredient }}
+          </li>
+        </div>
+      </div>
+
+      <h3>Instructions:</h3>
+      <p>{{ cocktail?.instructions }}</p>
+    </div>
+  </div>
+</div>

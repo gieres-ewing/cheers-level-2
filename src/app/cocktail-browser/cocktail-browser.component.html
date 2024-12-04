@@ -1,0 +1,14 @@
+<div class="cocktail-filter">
+  <div class="cocktail-filter-title">Filters</div>
+  <label>Cocktail name</label>
+  <input
+    #userInput
+    (input)="updateFilter(userInput.value)"
+    type="text" />
+</div>
+
+<div class="cocktails">
+  <ng-container *ngFor="let cocktail of filteredCocktails$ | async">
+    <app-cocktail-card [cocktail]="cocktail"> </app-cocktail-card>
+  </ng-container>
+</div>

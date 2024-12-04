@@ -1,0 +1,47 @@
+.overview {
+  display: flex;
+  flex-direction: row;
+  padding: 2px 16px;
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .container {
+    padding: 8px;
+
+    .title {
+      font-weight: bold;
+      display: flex;
+
+      .icon-star {
+        margin-left: auto;
+      }
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+
+    .characteristics {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px;
+
+      .chip-is-alcoholic {
+        display: inline-block;
+        max-width: 100px;
+        padding: 0 20px;
+        border-radius: 25px;
+        background-color: rgb(163, 190, 140);
+        color: white;
+        text-align: center;
+      }
+
+      .alcoholic {
+        background-color: rgb(94, 129, 172);
+      }
+    }
+  }
+}

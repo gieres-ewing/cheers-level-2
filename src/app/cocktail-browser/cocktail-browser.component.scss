@@ -1,0 +1,15 @@
+.cocktail-filter {
+  background-color: rgb(229, 233, 240);
+  padding: 8px;
+
+  .cocktail-filter-title {
+    font-weight: bold;
+    padding: 0 8px;
+  }
+}
+
+.cocktails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}

@@ -1,0 +1,24 @@
+<div
+  class="card"
+  (click)="goToOverview(cocktail.id)">
+  <img
+    src="{{ cocktail.imageUrl }}"
+    alt="Cocktail Image" />
+
+  <div class="container">
+    <header class="container-title">
+      <span>{{ cocktail.name }}</span>
+      <span
+        class="icon-star"
+        [class.active]="isFavorite()"
+        id="star-{cocktail.id}"
+        (click)="toggleFavorite(cocktail.id, $event)"></span>
+    </header>
+    <p
+      [class.alcoholic]="cocktail.isAlcoholic"
+      class="chip-is-alcoholic">
+      {{ cocktail.isAlcoholic ? 'Alcoholic' : 'Non alcoholic' }}
+    </p>
+    <p class="ingredients">{{ cocktail.ingredients.join(' | ') }}</p>
+  </div>
+</div>

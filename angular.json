@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hogwarts-theater": {
+    "cheers-level-2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "hogwarts-theater:build:production"
+              "buildTarget": "cheers-level-2:build:production"
             },
             "development": {
-              "buildTarget": "hogwarts-theater:build:development"
+              "buildTarget": "cheers-level-2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "hogwarts-theater:build"
+            "buildTarget": "cheers-level-2:build"
           }
         },
         "test": {

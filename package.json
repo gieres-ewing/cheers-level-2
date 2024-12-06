@@ -1,5 +1,5 @@
 {
-  "name": "hogwarts-theater",
+  "name": "cheers-level-2",
   "homepage": "https://gieres-ewing.github.io/cheers-level-2/",
   "version": "0.0.0",
   "scripts": {
@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "predeploy": "npm run build",
-    "deploy": "ng build --base-href /cheers-level-2/ && gh-pages -d dist/hogwarts-theater"
+    "deploy": "ng build --base-href /cheers-level-2/ && gh-pages -d dist/cheers-level-2"
   },
   "private": true,
   "dependencies": {

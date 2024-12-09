@@ -45,5 +45,8 @@
   },
   "msw": {
     "workerDirectory": "src"
+  },
+  "overrides": {
+    "socks": "2.8.1"
   }
 }
